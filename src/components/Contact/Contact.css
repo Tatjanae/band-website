@@ -1,0 +1,65 @@
+#contact h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container.contact__container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option {
+    background: var(--color-primary-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.contact__option h5 {
+    margin-top: 1rem;
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: var(--color-secondary);
+}
+
+.contact__option-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+
+
+/* Media queries (Large devices) */
+@media screen and (min-width: 1025px) {
+    .container.contact__container {
+        width: 35%;
+        margin: 0 auto;
+    }
+}
+
+
+/* Media queries (Medium devices) */
+@media screen and (max-width: 1024px) {
+    .container.contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    }
