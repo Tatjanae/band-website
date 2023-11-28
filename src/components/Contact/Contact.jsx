@@ -22,15 +22,15 @@ const Contact = () => {
           <ContactOption
             icon={<HiOutlineMail className='contact__option-icon' />}
             title="Email"
-            subtitle="JellyFishBand@outlook.com"
-            link="mailto:JellyFishBand@outlook.com"
+            subtitle="thisisatestemail@outlook.com"
+            link="mailto:thisisatestemail@outlook.com"
           />
 
           <ContactOption
             icon={<FaFacebookMessenger className='contact__option-icon' />}
             title="Facebook"
             subtitle="JellyFish Band"
-            link="https://m.me/jellyfishband"
+            link="https://www.facebook.com/people/JellyFish/100063890506631/"
           />
         </div>
       </div>

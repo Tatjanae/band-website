@@ -4,8 +4,16 @@ import './Gallery.css';
 
 const data = [
   {
-    video: 'https://www.youtube.com/embed/qPoKXTRW-W0?si=YLRlBnjqVC90-gQD',
-    name: 'JellyFish tijdens "Chillen in de Steeg"',
+    video: 'https://www.youtube.com/embed/7OQkG-XiJN0?si=MH2G1ICkok_sclwT',
+    name: 'Back to black - Optreden de Steeg - Den Haag 2019',
+  },
+  {
+    video: 'https://www.youtube.com/embed/1O7vcOanIfI?si=xLe6oF3pCb9cABBD',
+    name: 'Heroes - Boerderij Café - Zoetermeer 2018',
+  },
+  {
+    video: 'https://www.youtube.com/embed/kiKxOGrnV4I?si=Vb4KRakKRBG5T_MC',
+    name: 'Rain - Zoetermeer 2022',
   }
 ];
 
@@ -39,7 +47,8 @@ const Gallery = () => {
           height={315}
           src={randomVideo.video}
           title={randomVideo.name}
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          frameBorder={0}
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           allowFullScreen
         />
       </div>

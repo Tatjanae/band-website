@@ -25,6 +25,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .footer_socials a {

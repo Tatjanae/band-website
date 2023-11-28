@@ -11,25 +11,25 @@ import { GiDrumKit } from "react-icons/gi";
 // Members to map through
 const members = [
   {
-    name: 'Name1', 
+    name: 'Tamara Jansen', 
     image: SINGER,
-    title: 'Singer',
+    title: 'Singer & Guitarist',
     icon: <GiMicrophone />,
   }, 
   {
-    name: 'Name2', 
+    name: 'Art Krijgsman', 
     image: DRUMMER,
     title: 'Drummer',
     icon: <GiDrumKit />,
   },
   {
-    name: 'Name3', 
+    name: 'Helmer de Vries', 
     image: GUITARIST,
     title: 'Guitarist',
     icon: <GiGuitar />,
   },
   {
-    name: 'Name4', 
+    name: 'Berend Kroft', 
     image: BASSIST,
     title: 'Bassist',
     icon: <GiGuitar />,
