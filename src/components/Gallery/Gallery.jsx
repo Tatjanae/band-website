@@ -14,7 +14,11 @@ const data = [
   {
     video: 'https://www.youtube.com/embed/kiKxOGrnV4I?si=Vb4KRakKRBG5T_MC',
     name: 'Rain - Zoetermeer 2022',
-  }
+  }, 
+  {
+    video: 'https://www.youtube.com/embed/42knzoCDRq8?si=_S_5TkU-rfeXauf6',
+    name: 'Mama said - Boerderij Café - Zoetermeer 2018',
+  },
 ];
 
 const Gallery = () => {
@@ -36,6 +40,13 @@ const Gallery = () => {
     setRandomVideo(data[nextIndex]);
   };
 
+  const prevVideo = () => {
+    const prevIndex = (currentVideoIndex - 1 + data.length) % data.length;
+
+    setCurrentVideoIndex(prevIndex);
+    setRandomVideo(data[prevIndex]);
+  };
+
   return (
     <section id='gallery'>
       
@@ -48,17 +59,24 @@ const Gallery = () => {
           src={randomVideo.video}
           title={randomVideo.name}
           frameBorder={0}
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen
         />
       </div>
       <h5 className='video_name'>{randomVideo.name}</h5>
 
-      {data.length > 1 && (
-        <button onClick={nextVideo} className='btn next_btn'>
-          Next Video
-        </button>
-      )}
+      <div className='button-container'>
+        {data.length > 1 && (
+          <>
+            <button onClick={prevVideo} className='btn prev_btn'>
+              Previous Video
+            </button>
+            <button onClick={nextVideo} className='btn next_btn'>
+              Next Video
+            </button>
+          </>
+        )}
+      </div>
     </section>
   );
 };

@@ -80,6 +80,7 @@ grid-template-columns: 1fr;
 gap: 1rem;
 text-align: center;
 padding-top: 7rem;
+position: relative;
         }
 h1 {
     font-size: 2.2rem;
@@ -91,5 +92,11 @@ text-align: center;
 
 .main_about-right {
     display: grid;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 999;
 }
 }

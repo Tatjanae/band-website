@@ -26,12 +26,12 @@
     font-size: 1.5rem;
   }
   
-  .next_btn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-  }
 
+  .button-container button {
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
 
   /* Media queries (Medium devices) */
 @media screen and (max-width: 1024px) {
